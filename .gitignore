@@ -1,0 +1,13 @@
+# OS / editor junk
+Thumbs.db
+desktop.ini
+.DS_Store
+*.swp
+*~
+
+# Local dev scratch (not part of the published kit)
+.Android-CLI_One-URL.md
+
+# This kit ships no secrets and builds nothing.
+# Runtime data lives OUTSIDE the repo:
+#   %LOCALAPPDATA%\android-cli-one-click-kit\  (install marker, PATH backup)
